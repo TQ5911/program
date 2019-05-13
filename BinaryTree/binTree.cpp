@@ -1,5 +1,6 @@
 /************************************************************************/
-/* 类模板的定义和实现分在两个函数里，在编译阶段就不通过
+/* 
+类模板的定义和实现分在两个函数里，在编译阶段就不通过
 解决1：把定义和实现都放到头文件里
 解决2：在实现的调用函数文件开头加上#include "binTree.cpp"
 */
@@ -13,11 +14,11 @@ using namespace  std;
 func 为打印节点数据的函数
 */
 
-// 构造函数
+// 构造函数ok
 template<typename T>
 binTree<T>::binTree() :m_size(0), m_pRoot(nullptr){}
 
-//析构函数
+//析构函数ok
 template<typename T>
 binTree<T>::~binTree()
 {
@@ -25,28 +26,28 @@ binTree<T>::~binTree()
 		remove(m_pRoot);
 }
 
-// 返回二叉树的规模
+// 返回二叉树的规模ok
 template<typename T>
 int binTree<T>::size()
 {
 	return m_size;
 }
 
-// 判断二叉树是否为空
+// 判断二叉树是否为空ok
 template<typename T>
 bool binTree<T>::empty()
 {
-	return m_pRoot ? true : false;
+	return !m_pRoot ? true : false;
 }
 
-// 返回根节点的指针
+// 返回根节点的指针ok
 template<typename T>
 binNode<T>* binTree<T>::getRoot()
 {
 	return m_pRoot;
 }
 
-// 将指定元素插入作为根节点
+// 将指定元素插入作为根节点ok
 template<typename T>
 binNode<T>* binTree<T>::insertAsRoot(const T& e)
 {
@@ -56,33 +57,31 @@ binNode<T>* binTree<T>::insertAsRoot(const T& e)
 	return m_pRoot = new binNode<T>(e);
 }
 
-// 将指定元素插入作为指定节点的左孩子
+// 将指定元素插入作为指定节点的左孩子ok
 template<typename T>
 binNode<T>* binTree<T>::insertAsLChild(binNode<T>* bn, const T& e)
 {
 	if (bn->lchild)		//若左孩子已经存在则返回
 		return nullptr;
-	bn->lchild = bn->insertAsLChild(e);
-	//bn->lchild = new binNode<T>(e, bn);
+	bn->lchild = bn->insertAsLChild(e);//bn->lchild = new binNode<T>(e, bn);	
 	++m_size;
 	updateHeightAbove(bn->lchild);
 	return bn->lchild;
 }
 
-// 将指定元素插入作为指定节点的左孩子
+// 将指定元素插入作为指定节点的右孩子ok
 template<typename T>
 binNode<T>* binTree<T>::insertAsRChild(binNode<T>* bn, const T& e)
 {
 	if (bn->rchild)
 		return nullptr;
-	bn->rchild = bn->insertAsRChild(e);
-	//bn->rchild = new binNode<T>(e, bn);
+	bn->rchild = bn->insertAsRChild(e);//bn->rchild = new binNode<T>(e, bn);
 	++m_size;
 	updateHeightAbove(bn->rchild);
 	return bn->rchild;
 }
 
-// 将指定子树插入作为指定节点的左孩子
+// 将指定子树插入作为指定节点的左孩子ok
 template<typename T>
 binNode<T>* binTree<T>::attachAsLChild(binNode<T>* bn, binTree<T>* &bt)
 {
@@ -90,7 +89,7 @@ binNode<T>* binTree<T>::attachAsLChild(binNode<T>* bn, binTree<T>* &bt)
 		return nullptr;
 	bn->lchild = bt->getRoot();
 	bt->getRoot()->parent = bn;
-	updateHeightAbove(bn->lchild);
+	updateHeightAbove(bn);//updateHeightAbove(bn->lchild);
 	m_size += bt->size();
 
 	// 释放bt
@@ -100,7 +99,7 @@ binNode<T>* binTree<T>::attachAsLChild(binNode<T>* bn, binTree<T>* &bt)
 	return bn->lchild;
 }
 
-// 将指定子树插入作为指定节点的右孩子
+// 将指定子树插入作为指定节点的右孩子ok
 template<typename T>
 binNode<T>* binTree<T>::attachAsRChild(binNode<T>* bn, binTree<T>* &bt)
 {
@@ -108,24 +107,24 @@ binNode<T>* binTree<T>::attachAsRChild(binNode<T>* bn, binTree<T>* &bt)
 		return nullptr;
 	bn->rchild = bt->getRoot();
 	bt->getRoot()->parent = bn;
-	updateHeightAbove(bn->rchild);
+	updateHeightAbove(bn);//updateHeightAbove(bn->rchild);
 	m_size += bt->size();
 
 	// 释放bt
 	bt->m_pRoot = nullptr;
 	bt->m_size = 0;
 	bt = nullptr;
-	return bn->lchild;
+	return bn->rchild;
 }
 
-// 更新节点的高度
+// 更新节点的高度ok
 template<typename T>
 int binTree<T>::updateHeight(binNode<T>* bn)
 {
 	return bn->height = (1 + Max(stature(bn->lchild), stature(bn->rchild)));
 }
 
-// 更新此节点祖先节点的高度(插入或删除节点要执行更新)
+// 更新此节点祖先节点的高度(插入或删除节点要执行更新)ok
 template<typename T>
 void binTree<T>::updateHeightAbove(binNode<T>* bn)
 {
@@ -136,7 +135,7 @@ void binTree<T>::updateHeightAbove(binNode<T>* bn)
 	}
 }
 
-// 删除节点bn及其后代，并返回删掉的二叉树节点的总数
+// 删除节点bn及其后代，并返回删掉的二叉树节点的总数ok
 template<typename T>
 int binTree<T>::removeAt(binNode<T>* bn)
 {
@@ -148,13 +147,13 @@ int binTree<T>::removeAt(binNode<T>* bn)
 	return n;
 }
 
-// 删除以bn为根节点的子树
+// 删除以bn为根节点的子树ok
 template<typename T>
 int binTree<T>::remove(binNode<T>* bn)
 {
 	if (bn != m_pRoot)
 	{
-		((bn->parent->lchild) == bn) ? (bn->parent->lchild) == nullptr : (bn->parent->rchild) == nullptr;// 将父节点对应左\右孩子置空
+		((bn->parent->lchild) == bn) ? (bn->parent->lchild) = nullptr : (bn->parent->rchild) = nullptr;// 将父节点对应左\右孩子置空
 	}
 	binNode<T>* bp = bn->parent;
 	int n = removeAt(bn);
@@ -163,7 +162,7 @@ int binTree<T>::remove(binNode<T>* bn)
 	return n;
 }
 
-// 子树分离，将节点bn及其后代从二叉树中分离出来，然后形成一个独立的二叉树
+// 子树分离，将节点bn及其后代从二叉树中分离出来，然后形成一个独立的二叉树ok
 template<typename T>
 binTree<T>* binTree<T>::secede(binNode<T>* bn)
 {
@@ -189,7 +188,7 @@ binTree<T>* binTree<T>::secede(binNode<T>* bn)
 	return bt;
 }
 
-// 先序遍历(递归版本:简洁易懂)
+// 先序遍历(递归版本:简洁易懂)ok
 template<typename T>
 void binTree<T>::travPre_R(binNode<T>* bn_r, void(*func)(T& bn))
 {
@@ -199,7 +198,7 @@ void binTree<T>::travPre_R(binNode<T>* bn_r, void(*func)(T& bn))
 	travPre_R(bn_r->rchild, func);
 }
 
-// 中序遍历(递归版本:简洁易懂)
+// 中序遍历(递归版本:简洁易懂)ok
 template<typename T>
 void binTree<T>::travIn_R(binNode<T>* bn_r, void(*func)(T& bn))
 {
@@ -209,7 +208,7 @@ void binTree<T>::travIn_R(binNode<T>* bn_r, void(*func)(T& bn))
 	travIn_R(bn_r->rchild, func);
 }
 
-// 后序遍历(递归版本:简洁易懂)        
+// 后序遍历(递归版本:简洁易懂)ok
 template<typename T>
 void binTree<T>::travPost_R(binNode<T>* bn_r, void(*func)(T& bn))
 {
@@ -219,7 +218,7 @@ void binTree<T>::travPost_R(binNode<T>* bn_r, void(*func)(T& bn))
 	func(bn_r->data);
 }
 
-// 沿着左轮廓线遍历
+// 沿着左轮廓线遍历ok
 template<typename T>
 void binTree<T>::visitAlongLeftBranch(binNode<T>* bn, void(*func)(T& bn), stack<binNode<T>*> &s)
 {
@@ -231,7 +230,7 @@ void binTree<T>::visitAlongLeftBranch(binNode<T>* bn, void(*func)(T& bn), stack<
 	}
 }
 
-// 先序遍历(迭代版本:时间、空间复杂度低)
+// 先序遍历(迭代版本:时间、空间复杂度低)ok
 template<typename T>
 void binTree<T>::travPre_I(binNode<T>* bn_i, void(*func)(T& bn))
 {
@@ -245,7 +244,7 @@ void binTree<T>::travPre_I(binNode<T>* bn_i, void(*func)(T& bn))
 	}
 }
 
-// 从当前节点开始，沿着左分支深入入栈
+// 从当前节点开始，沿着左分支深入入栈ok
 template<typename T>
 void binTree<T>::goAlongLeftBranch(binNode<T>* bn, stack<binNode<T>*> &s)
 {
@@ -256,7 +255,7 @@ void binTree<T>::goAlongLeftBranch(binNode<T>* bn, stack<binNode<T>*> &s)
 	}
 }
 
-// 中序遍历(迭代版本:时间、空间复杂度低)
+// 中序遍历(迭代版本:时间、空间复杂度低)ok
 template<typename T>
 void binTree<T>::travIn_I(binNode<T>* bn_i, void(*func)(T& bn))
 {
@@ -272,7 +271,7 @@ void binTree<T>::travIn_I(binNode<T>* bn_i, void(*func)(T& bn))
 	}
 }
 
-// 在以s栈顶节点为根的子树中，找到最高左侧可见节点
+// 在以s栈顶节点为根的子树中，找到最高左侧可见节点ok
 template<typename T>
 void binTree<T>::gotoHLVFL(stack<binNode<T>*> &s)
 {
@@ -292,7 +291,7 @@ void binTree<T>::gotoHLVFL(stack<binNode<T>*> &s)
 	s.pop();// 移除空指针
 }
 
-// 后序遍历(迭代版本:时间、空间复杂度低)
+// 后序遍历(迭代版本:时间、空间复杂度低)ok
 template<typename T>
 void binTree<T>::travPost_I(binNode<T>* bn_i, void(*func)(T& bn))
 {
@@ -309,7 +308,7 @@ void binTree<T>::travPost_I(binNode<T>* bn_i, void(*func)(T& bn))
 	}
 }
 
-// 层次遍历
+// 层次遍历ok
 template<typename T>
 void binTree<T>::travLevel(binNode<T>* bn_i, void(*func)(T& bn))
 {

@@ -12,9 +12,11 @@ struct binNode
 	T data;
 	binNode<T> *parent, *lchild, *rchild;	// 指向父类，左孩子右孩子的指针
 	int height;								// 高度
+
+
 	//构造函数
-	binNode() :data(NULL), lchild(nullptr), rchild(nullptr), height(0){}
-	binNode(T e, binNode* p = nullptr, binNode* lc = nullptr, binNode* rc = nullptr, int h = 0) :
+	binNode() :data(NULL),parent(nullptr), lchild(nullptr), rchild(nullptr), height(0){}
+	binNode(T e, binNode* p = nullptr, binNode* lc = nullptr, binNode* rc = nullptr, int h = 0):
 		data(e), parent(p), lchild(lc), rchild(rc), height(h){}
 	//析构函数
 	~binNode() {}
@@ -32,7 +34,7 @@ struct binNode
 template<typename T>
 binNode<T>* binNode<T>::insertAsLChild(const T& e)
 {
-	return new binNode<T>(e,this);// this为本节点(父节点)
+	return new binNode<T>(e, this);// this为本节点(父节点)
 }
 
 template<typename T>

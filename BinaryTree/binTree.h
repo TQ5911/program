@@ -14,7 +14,7 @@ class binTree
 {
 protected:
 	// 成员变量
-	int m_size;			// 二叉树的规模
+	int m_size;				// 二叉树的规模
 	binNode<T>* m_pRoot;	// 树的根节点指针
 public:
 	// 构造函数

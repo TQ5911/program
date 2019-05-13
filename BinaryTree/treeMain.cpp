@@ -58,6 +58,12 @@ int main()
 	// 层次遍历01234567
 	cout << "--------------层次遍历--------------" << endl;
 	tree->travLevel(tree->getRoot(), printfFunc);
+	cout << endl;
+
+
+	binTree<int>* tree1 = new binTree<int>();
+	tree1->insertAsRoot(123);
+	tree1->attachAsLChild(tree1->getRoot(), tree);
 
 	getchar();
 	return 0;
