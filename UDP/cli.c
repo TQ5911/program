@@ -32,7 +32,7 @@ int main()
 	//向服务端发送信息
 	char buf[128];
 	int size;
-	struct sockaddr_in addr;
+	//struct sockaddr_in addr;
 	socklen_t len;
 
 	while(1)
@@ -58,7 +58,8 @@ int main()
 		}
 
 		// 接收服务端的回复消息
-		size = recvfrom(sockfd,buf,128,0,(struct sockaddr*)&addr,&len);
+		//size = recvfrom(sockfd,buf,128,0,(struct sockaddr*)&addr,&len);
+		size = recvfrom(sockfd,buf,128,0,(struct sockaddr*)&ser_addr,&len);
 		if(size == -1)
 		{
 			printf("接收服务端信息出错!\n");
