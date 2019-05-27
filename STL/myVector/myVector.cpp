@@ -2,10 +2,10 @@
 
 // 实现c++中myVector容器底层（具体实现也要放在与声明同样的文件中）
 template <typename T>
-myVector<T>::myVector(int c, T v)
+myVector<T>::myVector(int c,int s, T v)
 {
 	m_elem = new T[m_capacity = c];  // 申请容量为T*c的内存空间并用m_elem指针指向该地址
-	for (m_size = 0; m_size < c; )// 对有效值进行初始化并更新m_size
+	for (m_size = 0; m_size < s; )// 对有效值进行初始化并更新m_size
 		m_elem[m_size++] = v;  
 }
 

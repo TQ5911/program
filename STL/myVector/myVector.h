@@ -16,7 +16,7 @@ protected:
 	T* m_elem; // myVector内部所维护的数组的指针
 public:
 	// 构造函数(容量,初始大小,初始值)
-	myVector(int c = DEFAULT_CAPACITY, T v = 0);
+	myVector(int c = DEFAULT_CAPACITY,int s = 0, T v = 0);
 	myVector(const std::initializer_list<T>& li);    //列表初始化方式
 	myVector(const myVector<T>& A);
 	myVector(const myVector<T>& A, Rank lo, Rank hi);
