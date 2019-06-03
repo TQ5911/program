@@ -116,7 +116,7 @@ AVLTreeNode<T>* myAVLTree<T>::insert(AVLTreeNode<T>* subroot, const T& value)
 					subroot = SingleLeftRotate(subroot);
 				// RL：插入左子树的右子节点
 				if (value < subroot->right->data)
-					subroot = DoubleRightRotate(subroot);
+					subroot = DoubleLeftRotate(subroot);
 			}
 		}
 		setHeight(subroot, max(getHeight(subroot->left), getHeight(subroot->right)) + 1);
