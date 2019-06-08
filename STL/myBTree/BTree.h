@@ -18,28 +18,28 @@ class myBtree
 {
 
 public:
-	myBtree();
-	~myBtree(); 
-	myBTnode<T>* getRoot();
+	myBtree();		// 构造
+	~myBtree();		// 析构
+	myBTnode<T>* getRoot();// 得到根节点
 
 	myBTnode<T>* bTreeSearch(myBTnode<T>* x, int k, int& index);
-	bool keyIsExist(int key);
-	void printTree(myBTnode<T>* x);
-	void bTreeInsert(int k);
-	void bTreeDelete(int k);
+	bool keyIsExist(int key);		// 检查key是否存在
+	void printTree(myBTnode<T>* x);	// 打印树信息
+	void bTreeInsert(int k);		// 插入
+	void bTreeDelete(int k);		// 删除
 
 
 private:
-	myBTnode<T>* root;
-	void deleteTree(myBTnode<T>* pNode);
-	myBTnode<T>* alloactNode();
-	void bTreeSplitChild(myBTnode<T>* x, int i);
-	void bTreeInsertNonfull(myBTnode<T>* x, int k);
-	void deleteNode(myBTnode<T>* &node);
-	void bTreeMergeChild(myBTnode<T>* x, int index);
+	myBTnode<T>* root;	// 根节点
+	void deleteTree(myBTnode<T>* pNode);// 删除指定根节点的树
+	myBTnode<T>* alloactNode();			// 为节点申请空间
+	void bTreeSplitChild(myBTnode<T>* x, int i);	// 拆分孩子
+	void bTreeInsertNonfull(myBTnode<T>* x, int k);	// 插入
+	void deleteNode(myBTnode<T>* &node);			// 删除指定节点
+	void bTreeMergeChild(myBTnode<T>* x, int index);// 合并节点
 	int bTreeFindPredecessor(myBTnode<T>* x); // 前驱关键字 
 	int bTreeFindSuccessor(myBTnode<T>* x);   // 后继关键字 
-	void bTreeDeleteRecursive(myBTnode<T>* x, int k);	
+	void bTreeDeleteRecursive(myBTnode<T>* x, int k);	// 递归删除
 
 };
 
