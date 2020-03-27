@@ -1,0 +1,3199 @@
+创建套接字成功,套接字描述符为3.
+绑定ip和端口失败!
+client close.
+创建套接字成功,套接字描述符为3.
+绑定端口成功!端口号为3000
+服务端开始监听!
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52644
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52645
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:63947
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:63948
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52672
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Language: zh-CN
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52673
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Language: zh-CN
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52759
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:52760
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: image/webp,image/apng,image/*,*/*;q=0.8
+read line: Referer: http://118.24.251.43:3000/
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:63957
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:53799
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:53800
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: image/webp,image/apng,image/*,*/*;q=0.8
+read line: Referer: http://118.24.251.43:3000/
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+接收客户端连接请求成功!客户端Ip:196.52.43.92,Port:54562
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3602.2 Safari/537.36
+read line: Accept: */*
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:64599
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:64604
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:64612
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:71.6.146.185,Port:43337
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Accept-Encoding: identity
+read line: Host: 118.24.251.43
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:71.6.146.185,Port:43683
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Accept-Encoding: gzip, deflate
+read line: Accept: */*
+read line: User-Agent: python-requests/2.10.0
+read line: 
+接收客户端连接请求成功!客户端Ip:37.187.30.122,Port:55356
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: python-requests/2.22.0
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: Accept: */*
+read line: x-datadog-trace-id: 6100472197015512340
+read line: x-datadog-parent-id: 9040708639610267400
+read line: x-datadog-sampling-priority: 0
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:182.254.52.17,Port:44754
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:14.18.182.223,Port:59717
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:54634
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:61.241.50.63,Port:45347
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:60986
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:60992
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:61666
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	read failed.: Connection reset by peer
+client close.
+var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:116.128.128.41,Port:40495
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:193.106.31.98,Port:801
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62980
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62984
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62983
+request = GET
+url: /apple-touch-icon.png
+path: ./html_docs/apple-touch-icon.png
+read line: GET /apple-touch-icon.png HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62981
+request = GET
+url: /apple-touch-icon-precomposed.png
+path: ./html_docs/apple-touch-icon-precomposed.png
+read line: GET /apple-touch-icon-precomposed.png HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62985
+request = GET
+url: /apple-touch-icon.png
+path: ./html_docs/apple-touch-icon.png
+read line: GET /apple-touch-icon.png HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62986
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:62982
+request = GET
+url: /apple-touch-icon-precomposed.png
+path: ./html_docs/apple-touch-icon-precomposed.png
+read line: GET /apple-touch-icon-precomposed.png HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.
+read line: 4 facebookexternalhit/1.1 Facebot Twitterbot/1.0
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:71.6.232.5,Port:48496
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:53959
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Language: zh-CN
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: Pragma: no-cache
+read line: Cache-Control: no-cache
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:63509
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:63521
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Hosread failed.: Connection reset by peer
+client close.
+client close.
+client close.
+read failed.: Connection reset by peer
+client close.
+read failed.: Connection reset by peer
+client close.
+read failed.: Connection reset by peer
+client close.
+t: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:59.36.132.240,Port:62600
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:92.246.76.210,Port:65360
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:220.191.173.222,Port:41022
+other request = 
+read line: 
+接收客户端连接请求成功!客户端Ip:207.188.84.69,Port:21994
+other request = 
+read line: 
+接收客户端连接请求成功!客户端Ip:101.89.19.140,Port:56537
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:193.106.31.98,Port:528
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:92.246.76.210,Port:61876
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:65085
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = nread failed.: Connection reset by peer
+client close.
+read failed.: Connection reset by peer
+client close.
+client close.
+ull;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:218.72.51.240,Port:65086
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:185.202.0.25,Port:63016
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:193.106.31.98,Port:777
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:89.248.168.51,Port:39236
+接收客户端连接请求成功!客户端Ip:196.52.43.120,Port:54798
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3602.2 Safari/537.36
+read line: Accept: */*
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElemeread failed.: Connection reset by peer
+client close.
+ntById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:119.61.6.133,Port:46700
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: Host: 118.24.251.43:3000
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:119.61.6.134,Port:41398
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Accept-Encoding: gzip,deflate,sdch
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1
+read line: Accept-Charset: GBK,utf-8;q=0.7,*;q=0.3
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: Host: 118.24.251.43:3000
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:45.136.108.84,Port:63240
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:64695
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+client close.
+client close.
+client close.
+read failed.: Connection reset by peer
+client close.
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:57080
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:58430
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:46223
+other request = HELP
+read line: HELP
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:62285
+other request = DmdT
+read line: DmdT
+接收客户端连接请求成功!客户端Ip:193.106.31.98,Port:1363
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:89.248.172.16,Port:49202
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Accept-Encoding: identity
+read line: Host: 118.24.251.43
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>client close.
+client close.
+send reply failed.reason: Connection reset by peer创建套接字成功,套接字描述符为3.
+绑定端口成功!端口号为3000
+服务端开始监听!
+接收客户端连接请求成功!客户端Ip:112.17.236.204,Port:63684
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:112.17.236.204,Port:63685
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:112.17.236.204,Port:63686
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:112.17.236.204,Port:63687
+request = GET
+url: /?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+path: ./html_docs/?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+read line: GET /?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+read line: MhAjL%2FX%2FWXnrbXDhxSLIIkeIg729ARTQ28hCksH49BDybfaRdhys3fcUnRS5w2P3D94VRQYHhwjVclALuRDGvCEeAluKenVgk4QhoHiqew%3D%3D HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Mic
+read line: roMessenger/7.0.10(0x17000a21) NetType/4G Language/zh_CN
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:112.17.236.204,Port:63688
+request = GET
+url: /?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+path: ./html_docs/?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+read line: GET /?nsukey=H9AwDvysvNh1QA8TU4tckuH5Nfjavvn6dCzTq%2FZILugz%2FkEq3QzUpXMaAf1eXO1mNGa3oKO1ZWdT8BU6NjirpcAW8CVl%2Fki9rbgfS1YrNwhZ
+read line: MhAjL%2FX%2FWXnrbXDhxSLIIkeIg729ARTQ28hCksH49BDybfaRdhys3fcUnRS5w2P3D94VRQYHhwjVclALuRDGvCEeAluKenVgk4QhoHiqew%3D%3D HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Mic
+read line: roMessenger/7.0.10(0x17000a21) NetType/4G Language/zh_CN
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10115
+request = GET
+url: /?nsukey=nsLe4wCB9k2Y7suIS0cfko3o1cqn%2FHwdA5ZwByZyxLLjLgAIM2LxKv1XRycNs0N3V%2F15%2BXJjX1K1JDXiv7b4KxEV4Rx0a6WssDbo6bWsybxa
+path: ./html_docs/?nsukey=nsLe4wCB9k2Y7suIS0cfko3o1cqn%2FHwdA5ZwByZyxLLjLgAIM2LxKv1XRycNs0N3V%2F15%2BXJjX1K1JDXiv7b4KxEV4Rx0a6WssDbo6bWsybxa
+read line: GET /?nsukey=nsLe4wCB9k2Y7suIS0cfko3o1cqn%2FHwdA5ZwByZyxLLjLgAIM2LxKv1XRycNs0N3V%2F15%2BXJjX1K1JDXiv7b4KxEV4Rx0a6WssDbo6bWsybxa
+read line: AIMxMihX11wkNcNzLHMrrGX0VqUsfTil1Zx20oVJnPkIFnUwmsJ11%2FoNS8TpoKb35%2FTx4pIteZVtENUmaK9S1wBZTwBlt8bUaJWnw5oG8Q%3D%3D HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36 QBCo
+read line: re/4.0.1295.400 QQBrowser/9.0.2524.400 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2
+read line: 875.116 Safari/537.36 NetType/WIFI MicroMessenger/7.0.5 WindowsWechat
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.5;q=0.4
+read line: 
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10122
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.9
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10123
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+read line: Accept: image/webp,image/apng,image/*,*/*;q=0.8
+read line: Referer: http://118.24.251.43:3000/
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.9
+read line: 
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10139
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.9
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function timclient close.
+client close.
+client close.
+e()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:223.104.246.192,Port:18357
+request = GET
+url: /?nsukey=83NRJ4EJcnCwoWwqhhLzde2rgAlxl49S3d2lhaG8PhcSi4fUshNv1UgOHLTOUyCBRX1sXf%2B64hkqP3znz%2BpxIpZdi%2BggCVclSNDpNnDc%2BS
+path: ./html_docs/?nsukey=83NRJ4EJcnCwoWwqhhLzde2rgAlxl49S3d2lhaG8PhcSi4fUshNv1UgOHLTOUyCBRX1sXf%2B64hkqP3znz%2BpxIpZdi%2BggCVclSNDpNnDc%2BS
+read line: GET /?nsukey=83NRJ4EJcnCwoWwqhhLzde2rgAlxl49S3d2lhaG8PhcSi4fUshNv1UgOHLTOUyCBRX1sXf%2B64hkqP3znz%2BpxIpZdi%2BggCVclSNDpNnDc%2BS
+read line: hTEnS%2BQxdFfo1qNJNM4v868OBv1gVR6vGl8PahdK4PGRfZNkYJ1Qjk7vFeEjEHfL7IqQX1xb8lFBhw%2Ful0jRhFofyJtHk%2B%2Bhbpd4B0M97%2F8A%3D%3D HT
+read line: TP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Mic
+read line: roMessenger/7.0.11(0x17000b21) NetType/2G Language/zh_CN
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10140
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10141
+接收客户端连接请求成功!客户端Ip:122.224.230.90,Port:10138
+接收客户端连接请求成功!客户端Ip:223.104.246.192,Port:18358
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:223.104.246.192,Port:18359
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Accept: */*
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Referer: http://118.24.251.43:3000/
+read line: Accept-Encoding: gzip, deflate
+read line: 
+接收客户端连接请求成功!客户端Ip:36.25.32.224,Port:53278
+request = GET
+url: /?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+path: ./html_docs/?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+read line: GET /?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+read line: aZv%2B8PgmAVOPSEC%2FiXPKL%2FxD1%2FgiVl9PRYvkGKX%2BVBiqgWZ1to1Jw1LAtN2ccHcAEsBoa3WFoMhIFjC20RplOctaClFK2Ae%2BuWT4BUNw%3D%3D HTTP
+read line: /1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36 QBCor
+read line: e/4.0.1295.400 QQBrowser/9.0.2524.400 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.28
+read line: 75.116 Safari/537.36 NetType/WIFI MicroMessenger/7.0.5 WindowsWechat
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.5;q=0.4
+read line: 
+接收客户端连接请求成功!客户端Ip:36.25.32.224,Port:53306
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Accept: text/html, application/xhtml+xml, */*
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko Core/1.70.3741.400 QQBrowser/10.5.3863.400
+read line: Host: 118.24.251.43:3000
+read line: Connection: Keep-Alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:61.151.178.174,Port:47059
+request = GET
+url: /?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+path: ./html_docs/?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+read line: GET /?nsukey=GkP9KVZ5HYvVjobAT%2BYiy4nuRSc9unDmQOjNP%2FLs3X7m5z41FIlwPCP4iHE50R5wF2KFZZ2iB2L3gs85DiWA54xXb8LNN65mZkmE3cVR9Y8r1B
+read line: aZv%2B8PgmAVOPSEC%2FiXPKL%2FxD1%2FgiVl9PRYvkGKX%2BVBiqgWZ1to1Jw1LAtN2ccHcAEsBoa3WFoMhIFjC20RplOctaClFK2Ae%2BuWT4BUNw%3D%3D HTTP
+read line: /1.1
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 Micro
+read line: Messenger/6.5.5 NetType/WIFI Language/en
+read line: Accept: */*
+read line: Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: 
+接收客户端连接请求成功!客户端Ip:122.226.109.99,Port:37028
+request = GET
+url: /?nsukey=0r1epAN0cgV1DGjiy67fDfVQQt%2B1n6UTNKu%2FelWMSRqfH2FA9njrYp26l4L0BrtuIBHOjtWBxWPyjwKE0SugDB6Uyfsp7LJ%2BO5j%2Fc9WABd
+path: ./html_docs/?nsukey=0r1epAN0cgV1DGjiy67fDfVQQt%2B1n6UTNKu%2FelWMSRqfH2FA9njrYp26l4L0BrtuIBHOjtWBxWPyjwKE0SugDB6Uyfsp7LJ%2BO5j%2Fc9WABd
+read line: GET /?nsukey=0r1epAN0cgV1DGjiy67fDfVQQt%2B1n6UTNKu%2FelWMSRqfH2FA9njrYp26l4L0BrtuIBHOjtWBxWPyjwKE0SugDB6Uyfsp7LJ%2BO5j%2Fc9WABd
+read line: DgRuaia8vgI0DjjCvCOeyyOYxXRF4XVhF8ZA7ETK%2BzwmX2j44O%2B0fvfYjBl600Yge5UudlUGXedsMDSHqxAZTPPNRUpg%2FXLc%2B0ZyygQkRgyA%3D%3D HTTP
+read line: /1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; vivo X9s Build/OPM1.171019.019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Versi
+read line: on/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045129 Mobile Safari/537.36 MMWEBID/9271 MicroMessenger/7.0.12.1620(0x27000C39) 
+read line: Process/tools NetType/WIFI Language/zh_CN ABI/arm64
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/wxpic,image/sharpp,image/apng,image/t
+read line: pg,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,en-US;q=0.9
+read line: 
+接收客户端连接请求成功!客户端Ip:122.226.109.99,Port:37029
+request = GET
+url: /favicon.ico
+path: ./html_docs/favicon.ico
+read line: GET /favicon.ico HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; vivo X9s Build/OPM1.171019.019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Versi
+read line: on/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045129 Mobile Safari/537.36 MMWEBID/9271 MicroMessenger/7.0.12.1620(0x27000C39) 
+read line: Process/tools NetType/WIFI Language/zh_CN ABI/arm64
+read line: Accept: image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8
+read line: Referer: http://118.24.251.43:3000/?nsukey=0r1epAN0cgV1DGjiy67fDfVQQt%2B1n6UTNKu%2FelWMSRqfH2FA9njrYp26l4L0BrtuIBHOjtWBxWPyjwKE
+read line: 0SugDB6Uyfsp7LJ%2BO5j%2Fc9WABdDgRuaia8vgI0DjjCvCOeyyOYxXRF4XVhF8ZA7ETK%2BzwmX2j44O%2B0fvfYjBl600Yge5UudlUGXedsMDSHqxAZTPPNRUpg%
+read line: 2FXLc%2B0ZyygQkRgyA%3D%3D
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,en-US;q=0.9
+read line: 
+接收客户端连接请求成功!客户端Ip:183.155.53.15,Port:58290
+request = GET
+url: /?nsukey=TiTjFweIKh%2FP982eSGdX8GydlG345xPPr6MhEGC%2FfF3eeHmkvzKVENgNt1Nm00eG1fGT2LtTeinGWdH6VFKng%2FN8FR9LAtV8dXTi9imen%2B
+path: ./html_docs/?nsukey=TiTjFweIKh%2FP982eSGdX8GydlG345xPPr6MhEGC%2FfF3eeHmkvzKVENgNt1Nm00eG1fGT2LtTeinGWdH6VFKng%2FN8FR9LAtV8dXTi9imen%2B
+read line: GET /?nsukey=TiTjFweIKh%2FP982eSGdX8GydlG345xPPr6MhEGC%2FfF3eeHmkvzKVENgNt1Nm00eG1fGT2LtTeinGWdH6VFKng%2FN8FR9LAtV8dXTi9imen%2B
+read line: mOJBc9meX%2FsKZKKUnS1aNmk09VzxY58WzyridjIMo3r1hLhseq9XQa5pq39GaFw576OFhZDxq2Y91EVoHb1loTUi9ndksAL7NsOeY1NO14bg%3D%3D HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36 QBCo
+read line: re/4.0.1295.400 QQBrowser/9.0.2524.400 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2
+read line: 875.116 Safari/537.36 NetType/WIFI MicroMessenger/7.0.5 WindowsWechat
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Acceclient close.
+client close.
+client close.
+创建套接字成功,套接字描述符为3.
+绑定ip和端口失败!
+创建套接字成功,套接字描述符为3.
+绑定端口成功!端口号为3000
+服务端开始监听!
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:52954
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Cache-Control: max-age=0
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:52957
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Cache-Control: max-age=0
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:58748
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like client close.
+Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:58752
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:118.24.251.43,Port:55968
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:53369
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:58795
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:53381
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.gread failed.: Connection reset by peer
+client close.
+etElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:53387
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Connection: keep-alive
+read line: Cache-Control: max-age=0
+read line: Upgrade-Insecure-Requests: 1
+read line: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+read line: Accept-Encoding: gzip, deflate
+read line: Accept-Language: zh-CN,zh;q=0.8
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:115.204.94.22,Port:58796
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: Upgrade-Insecure-Requests: 1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mo
+read line: bile/15E148 Safari/604.1
+read line: Accept-Language: zh-cn
+read line: Accept-Encoding: gzip, deflate
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:193.106.31.98,Port:1019
+other request = 
+read line: 
+read line: 
+接收客户端�client close.
+client close.
+read failed.: Connection reset by peer
+client close.
+client close.
+client close.
+read failed.: Connection reset by peer
+client close.
+��接请求成功!客户端Ip:182.140.238.180,Port:9477
+other request = {
+read line: {
+接收客户端连接请求成功!客户端Ip:182.254.52.17,Port:48140
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:193.106.30.234,Port:106
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:182.254.52.17,Port:60040
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:101.89.19.140,Port:54516
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:223.71.167.164,Port:9996
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+read line: Accept: */*
+read line: Connection: keep-alive
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:182.140.238.180,Port:27863
+other request = {
+read line: {
+接收客户端连接请求成功!客户端Ip:182.254.52.17,Port:44232
+request = GET
+url: http://118.24.251.43:3000/
+path: ./html_docshttp://118.24.251.43:3000/cur_time.html
+read line: GET http://118.24.251.43:3000/ HTTP/1.1
+read line: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+read line: Accept-Encoding: gzip
+read line: Host: 118.24.251.43:3000
+read line: Q-Sub-Business: contentsecurity
+read line: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0
+read line: 
+接收客户端连接请求成功!客户端Ip:45.141.84.44,Port:62738
+other request = 
+read line: 
+read line: 
+接收客户端连接请�read failed.: Connection reset by peer
+client close.
+read failed.: Connection reset by peer
+client close.
+�成功!客户端Ip:193.106.31.98,Port:1417
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:5.188.206.50,Port:63720
+other request = 
+read line: 
+read line: 
+接收客户端连接请求成功!客户端Ip:196.52.43.121,Port:52343
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3602.2 Safari/537.36
+read line: Accept: */*
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:83.97.20.49,Port:50693
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.0
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
+			if(m < 10){m = "0" + m;}
+			if(s < 10){s = "0" + s;}
+       		document.getElementById("timeShow").innerHTML =  "current time:"+ y + "-" + mm + "-" + d + "-" + weekday[day] + " " + h + ":" + m + ":" + s + " ";
+       		t = setTimeout(time,1000);
+    	}
+	</script>
+  	<style>
+    .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+  	</style>
+</head>
+<body>
+	<div id="timeShow" class="time1"></div>
+</body>
+</html>
+接收客户端连接请求成功!客户端Ip:185.173.35.41,Port:40900
+request = GET
+url: /
+path: ./html_docs/cur_time.html
+read line: GET / HTTP/1.1
+read line: Host: 118.24.251.43:3000
+read line: User-Agent: NetSystemsResearch studies the availability of various services across the internet. Our website is netsystemsresea
+read line: rch.com
+read line: 
+write[81]:
+HTTP/1.0 200 OK
+Server: ztq Server
+Content-Type: text/html
+Connection: Close
+
+write[1067]:
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>Dynamically display the current time</title>
+	<script language="javascript">
+		var t = null;
+    	t = setTimeout(time,1000);
+    	function time()
+    	{
+       		clearTimeout(t);
+       		dt = new Date();
+			var y = dt.getYear() + 1900;
+			var mm = dt.getMonth() + 1;
+			var d = dt.getDate();
+			var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			var day = dt.getDay();
+	       	var h = dt.getHours();
+	       	var m = dt.getMinutes();
+	       	var s = dt.getSeconds();
+			if(h < 10){h = "0" + h;}
